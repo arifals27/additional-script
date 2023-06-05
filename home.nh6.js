@@ -9995,82 +9995,13 @@
                 }
                 return (
                     (t.prototype.show = function () {
-                        document.querySelector("section.advertisement > ins.adsbyexoclick") && (o.k("https://a.realsrv.com/ad-provider.js"), (window.AdProvider = window.AdProvider || []), window.AdProvider.push({ serve: {} }));
+                        
                     }),
                     t
                 );
             })(),
             w = (function () {
-                function t(t) {
-                    this.options = t;
-                }
-                return (
-                    (t.prototype.show = function () {
-                        document.querySelector("#ts_ad_native_ld0p1") &&
-                            o
-                                .k("https://cdn.tsyndicate.com/sdk/v1/n.js")
-                                .then(function () {
-                                    window.NativeAd({
-                                        element_id: "ts_ad_native_ld0p1",
-                                        spot: "cd064e9fd2d9400887969523ddadeb5f",
-                                        type: "label-under",
-                                        cols: 4,
-                                        rows: 1,
-                                        title: "",
-                                        titlePosition: "left",
-                                        adsByPosition: "right",
-                                        breakpoints: [{ cols: 2, width: 770 }],
-                                        styles: { headlineLink: { color: "#d9d9d9", ":hover": { color: "#e0cfcf" }, "font-size": "16px" }, brandnameLink: { color: "#b0adad", "font-size": "12px" } },
-                                    });
-                                })
-                                .execute(),
-                            document.querySelector("#ts_ad_native_2yqbs") &&
-                                o
-                                    .k("https://cdn.tsyndicate.com/sdk/v1/n.js")
-                                    .then(function () {
-                                        window.NativeAd({
-                                            element_id: "ts_ad_native_2yqbs",
-                                            spot: "d61f0d255e104a5082858ddedffbcc8c",
-                                            type: "label-under",
-                                            cols: 4,
-                                            rows: 1,
-                                            title: "",
-                                            titlePosition: "left",
-                                            adsByPosition: "right",
-                                            breakpoints: [{ cols: 2, width: 770 }],
-                                            styles: { headlineLink: { color: "#d9d9d9", ":hover": { color: "#e0cfcf" }, "font-size": "16px" }, brandnameLink: { color: "#b0adad", "font-size": "12px" } },
-                                        });
-                                    })
-                                    .execute(),
-                            document.querySelector("#ts_ad_native_kxjbg") &&
-                                o
-                                    .k("https://cdn.tsyndicate.com/sdk/v1/master.spot.js")
-                                    .then(function () {
-                                        window.TsMasterSpot({
-                                            containerId: "ts_ad_native_kxjbg",
-                                            spot: "42GtKb7hjCzvBKWuqS09vePz8QqZ8w93",
-                                            wrapperStyles: { display: "flex", flexDirection: "column", justifyContent: "space-around", alignItems: "center" },
-                                            nativeSettings: {
-                                                cols: 1,
-                                                rows: 2,
-                                                titlePosition: "none",
-                                                adsByPosition: "none",
-                                                type: "img-left",
-                                                styles: {
-                                                    container: { width: "100%" },
-                                                    thumb: { "border-radius": "4px", background: "rgba(255,255,255,1)" },
-                                                    headlineLink: { "padding-top": "10px", "font-size": "12px", "font-weight": "bold", "max-height": "64px" },
-                                                    brandnameLabel: { position: "absolute", bottom: "10px" },
-                                                    brandnameLink: { color: "#444" },
-                                                    image: { "padding-bottom": "100%" },
-                                                },
-                                            },
-                                        });
-                                    })
-                                    .execute();
-                    }),
-                    t
-                );
+              
             })(),
             y = n(91),
             b = (function () {
