@@ -10199,12 +10199,6 @@
                     ((this.options = t), (this.router = new i.a()), (e = this.router.routes).push.apply(e, Object(r.a)(E.a.routes)), window._mv) && (n = this.router.routes).push.apply(n, Object(r.a)(window._mv.routes));
                     o.c(window, "popstate", this.router.handle_current_url.bind(this.router)),
                         o.p(this.router.handle_current_url.bind(this.router)),
-                        (this.popunder = new v(this.options.ads || {})),
-                        o.p(this.popunder.show.bind(this.popunder)),
-                        (this.exoclick = new m(this.options.ads || {})),
-                        o.p(this.exoclick.show.bind(this.exoclick)),
-                        (this.xhamster = new w(this.options.ads || {})),
-                        o.p(this.xhamster.show.bind(this.xhamster)),
                         (this.analytics = new b("UA-52345677-1", 0.1)),
                         (this.lazy_loader = null),
                         o.p(this.install_lazy_loader.bind(this)),
