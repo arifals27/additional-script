@@ -10226,7 +10226,7 @@
                                 }, 10);
                     }),
                     (e.handle_image_loaded = function (t) {
-                        t.src = r.j().get_cdn_url(t.dataset.src);
+                        t.src = o.j().get_cdn_url(t.dataset.src)
                     }),
                     (e.in_viewport = function (t, e) {
                         var n = t.getBoundingClientRect();
