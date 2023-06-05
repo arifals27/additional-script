@@ -10226,7 +10226,7 @@
                                 }, 10);
                     }),
                     (e.handle_image_loaded = function (t) {
-                        t.src = o.j().get_cdn_url(t.dataset.src);
+                        t.src = r.j().get_cdn_url(t.dataset.src).replace("https://", "https://cdn.manhwature.com/");
                     }),
                     (e.in_viewport = function (t, e) {
                         var n = t.getBoundingClientRect();
@@ -10303,11 +10303,9 @@
                 var e = t.prototype;
                 return (
                     (e.get_cdn_url = function (t) {
-                        var e = this.options.media_server;
-                        return t.replace(/\/\/([it])\d*\./, function (t, n) {
-                            return "//".concat(n).concat(e, ".");
-                        });
-                    }),
+    var e = this.options.media_server;
+    return t.replace(/\/\//, "//cdn.manhwature.com/" + e + "/");
+}),
                     (e.route = function (t, e) {
                         return this.router.route(t, e);
                     }),
