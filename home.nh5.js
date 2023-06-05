@@ -10303,9 +10303,11 @@
                 var e = t.prototype;
                 return (
                     (e.get_cdn_url = function (t) {
-    var e = this.options.media_server;
-    return t.replace(/\/\//, "//cdn.manhwature.com/" + e + "/");
-}),
+                        var e = this.options.media_server;
+                        return t.replace(/\/\/([it])\d*\./, function (t, n) {
+                            return "//cdn.manhwature.com/".concat(n).concat(e, ".");
+                        });
+                    }),
                     (e.route = function (t, e) {
                         return this.router.route(t, e);
                     }),
