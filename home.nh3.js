@@ -4262,7 +4262,7 @@
                     (e.get_image = function (t, e) {
                         if (t in this.image_cache) return this.image_cache[t];
                         var n = this.gallery.images.pages[t - 1];
-                        e = e || new Image(); e.src = r.j().get_cdn_url(n.url())), (this.image_cache[t] = { image: e, loaded: !1, reload_attempts: 3 }), (e.width = n.width), (e.height = n.height);
+                        e || ((e = new Image()).src = r.j().get_cdn_url(n.url())), (this.image_cache[t] = { image: e, loaded: !1, reload_attempts: 3 }), (e.width = n.width), (e.height = n.height);
                         var i = this,
                             o = function () {
                                 (i.image_cache[t].loaded = !0), i.current_page === t && i.maybe_preload();
